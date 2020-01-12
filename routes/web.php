@@ -12,11 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('pages/homepage2');
 });
-Route::get('/singin', function () {
-    return view('singin');
+Route::get('account', function () {
+    return view('pages/account');
 });
-Route::get('/registration', function () {
-    return view('pages.registration');
+Route::get('login', function () {
+    return view('pages/login');
+});
+Route::get('product', function () {
+    return view('pages/product');
+});
+Route::get('cart', function () {
+    return view('pages/cart');
+});
+Route::get('checkout', function () {
+    return view('pages/checkout');
 });
